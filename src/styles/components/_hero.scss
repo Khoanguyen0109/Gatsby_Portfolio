@@ -1,0 +1,66 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  margin-top: -5rem;
+  padding-top: 5rem;
+  background: $clr-primary-10;
+
+  &-center {
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+  &-img {
+    // display: none;
+  }
+  &-icons {
+    justify-content: flex-start;
+  }
+
+  &-info {
+    background: $clr-primary-10;
+  }
+
+  &-btn {
+    margin-top: 1.25rem;
+  }
+
+  .underline {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+}
+@include media(desktop) {
+  .hero {
+
+    &-center{
+        grid-template-columns: repeat(12, 1fr);
+
+    }
+    &-info {
+      grid-row: 1/1;
+      grid-column: 1 / span 8;
+    }
+
+    &-img {
+        object-fit: cover;
+        max-height: 100vh;
+      display: block;
+      grid-row: 1/1;
+      grid-column: 7/-1;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 65%;
+      right: 0;
+      bottom: 0;
+      background: $clr-white;
+    }
+
+    h4 {
+      font-size: 0.85rem;
+    }
+  }
+}

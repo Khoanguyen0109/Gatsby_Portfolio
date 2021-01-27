@@ -1,0 +1,49 @@
+.blog-template {
+    padding: 5rem 0;
+
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+     h2{
+        text-align: left;
+
+    }
+    
+    ul{
+        margin-top: 2rem;
+        display: inline-block;
+
+        li{
+            background: $clr-grey-9;
+            color: $clr-grey-5;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            text-transform: uppercase;
+        }
+    }
+
+    blockquote {
+        background: $clr-grey-9;
+        border-radius:$radius;
+        padding: 1rem;
+        line-height: 2;
+        color: $clr-grey-5;
+        margin: 2rem 0;
+      }
+      pre {
+        background: #222;
+        color: yellow;
+        overflow-x: scroll;
+        padding: 1rem 1.5rem;
+        color: $clr-grey-5;
+    }
+
+    img {
+        width: 15rem;
+        height: 15rem;
+        margin: 3rem 0;
+      }
+      
+
+  }

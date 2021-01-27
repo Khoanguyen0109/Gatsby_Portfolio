@@ -1,0 +1,28 @@
+.footer {
+  height: 9rem;
+  background: #222;
+  text-align: center;
+  display: grid;
+  place-items: center;
+
+  h4 {
+    margin-top: 0.5rem;
+    color: $clr-white;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    span {
+      color: $clr-primary-5;
+    }
+  }
+  &-links{
+    margin: 0 auto 1rem auto;
+
+    .social-link{
+        color: $clr-white;
+        &:hover{
+            color: $clr-primary-5;
+        }
+    }
+  }
+}

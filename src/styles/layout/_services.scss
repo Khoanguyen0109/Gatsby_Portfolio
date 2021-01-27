@@ -1,0 +1,64 @@
+.service {
+  background: $clr-white;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: $radius;
+  text-align: center;
+  -webkit-transition: $transition;
+  transition: $transition;
+
+  &-icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .underline {
+    width: 3rem;
+    height: 0.12rem;
+    -webkit-transition: $transition;
+    transition: $transition;
+  }
+
+  p {
+    -webkit-transition: $transition;
+    transition: $transition;
+  }
+
+  &:hover {
+    background: $clr-grey-5;
+    color: $clr-grey-9;
+
+    .underline {
+      color: $clr-grey-9;
+    }
+
+    p {
+      color: $clr-grey-9;
+    }
+  }
+}
+
+@include media(tablet ){
+    .services-center {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .service{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+      }
+}
+
+@include media(desktop){
+    .services-center {
+        display: grid;
+        -webkit-column-gap: 2rem;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+}
